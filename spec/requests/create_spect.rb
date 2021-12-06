@@ -1,6 +1,4 @@
-describe "test"
-
-it 'is expected to respond with status 200' do
-    expect(response.status).to eql 400
-    end
-
+RSpec.describe wrestlers, type: :model do
+    it { is_expected.to have_db_column :name }
+    it { is_expected.to have_db_column :move }
+end
